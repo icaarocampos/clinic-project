@@ -10,7 +10,7 @@ gem 'font-awesome-rails', '4.3.0.0'
 gem 'rails_12factor', group: :production
 gem 'sqlite3', group: :development
 gem 'pg', group: :production
-gem puma, group: :production
+gem 'puma', group: :production
 ruby '2.3.1'
 
 
