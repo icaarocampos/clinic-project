@@ -11,6 +11,10 @@ gem 'rails_12factor', group: :production
 gem 'sqlite3', group: :development
 gem 'pg', group: :production
 gem 'puma', group: :production
+
+#delete
+gem 'jquery-rails'
+
 ruby '2.3.1'
 
 

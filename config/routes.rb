@@ -1,4 +1,9 @@
 Myapp::Application.routes.draw do
+  resources :procedures
+  resources :types
+  resources :doctors
+  resources :specialties
+  resources :customers
   get 'home/index' => 'home#index'
   get 'home/minor' => 'home#minor'
   # The priority is based upon order of creation: first created -> highest priority.

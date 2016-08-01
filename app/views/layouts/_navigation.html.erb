@@ -15,13 +15,20 @@
                     </ul>
                 </div>
                 <div class="logo-element">
-                    IN+
+                    CP
                 </div>
             </li>
-            <li class="<%= 'active' if current_page?('/') %>">
-                <%= link_to "/" do %>
-                <i class="fa fa-laptop"></i> <span class="nav-label">Main page</span>
-                <% end %>
+            <li class="">
+                <a href=""><i class="fa fa-th-large"></i> <span class="nav-label" data-i18n="nav.dashboard">Register</span> <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse <%= is_active_controller('customers') %>">
+                    <li class="<%= is_active_action('index') %>"><%= link_to "Customers", customers_path %></li>
+                </ul>
+                <ul class="nav nav-second-level collapse <%= is_active_controller('doctors') %>">
+                    <li class="<%= is_active_action('index') %>"><%= link_to "Doctors", doctors_path %></li>
+                </ul>
+                <ul class="nav nav-second-level collapse <%= is_active_controller('specialties') %>">
+                    <li class="<%= is_active_action('index') %>"><%= link_to "Specialties", specialties_path %></li>
+                </ul>
             </li>
             <li class="<%= 'active' if current_page?('/home/minor') %>">
                 <%= link_to "/home/minor" do %>
