@@ -31,12 +31,6 @@ ActiveRecord::Schema.define(version: 20160723175818) do
 
   add_index "doctors", ["specialty_id"], name: "index_doctors_on_specialty_id"
 
-  create_table "kinds", force: :cascade do |t|
-    t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "procedures", force: :cascade do |t|
     t.string   "name"
     t.integer  "type_id"
